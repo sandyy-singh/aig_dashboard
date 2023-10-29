@@ -34,10 +34,10 @@ const loginUser = async (req, res) => {
             if (user.password === password) {
                 return res.status(201).json({ status: 201, user })
             } else {
-                return res.status(400).send('wrong password');
+                return res.status(400).json({ status: 400, message: 'wrong password' });
             }
         } else {
-            return res.status(400).send('Email not found');
+            return res.status(400).json({ status: 400, message: 'email not found' });
         }
 
     } catch (error) {
