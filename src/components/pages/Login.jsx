@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react'
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
@@ -21,8 +22,6 @@ const Login = () => {
             if (data.status === 40) {
                 toast.error('Login Failed')
             }
-
-
             setLoading(false)
         } catch (error) {
             console.log(error)
@@ -60,5 +59,6 @@ const Login = () => {
 }
 
 export default Login
+
 
 

@@ -13,7 +13,7 @@
     border-radius: 16px;
     background: var(--White, #FFF);
     min-width: 220px;
-    min-height: 200px;
+    min-height: 250px;
     margin-top: 15px;
 }
 
@@ -28,7 +28,7 @@
 
 .states {
     height: 400px;
-    min-height: 400px;
+    min-height: 410px;
    
     border-radius: 16px;
     background: var(--White, #FFF);
@@ -61,7 +61,7 @@
     margin-top: 15px;
 }
 .chats{
-    min-height: 240px;
+    min-height: 200px;
     border-radius: 16px;
     background: var(--White, #FFF);
     margin-top: 15px; 
@@ -72,4 +72,48 @@
     background: var(--White, #FFF);
     margin-top: 15px; 
     margin-bottom: 15px;
+}
+.chartt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.first{
+    width: 20px;
+    height: 20px;
+    background-color: rgba(115 ,74,0 ,1);
+}
+.second{
+    width: 20px;
+    height: 20px;
+    background-color: rgba(0 ,40,63 ,1);
+}
+.third{
+    width: 20px;
+    height: 20px;
+    background-color: rgba(0 ,128,0 ,1);
+}
+.table-div{
+    table{
+        font-size: 15px;
+        thead{
+            tr{
+                th{
+                    border: 1px solid black;
+                    text-align: center;
+                    padding: 5px;
+                }
+            }
+        }
+        tbody{
+            tr{
+                td{
+                    border: 1px solid black;
+                    text-align: center;
+                    padding-right: 10px;
+                    padding-left: 10px;
+                }
+            }
+        }
+    }
 }
