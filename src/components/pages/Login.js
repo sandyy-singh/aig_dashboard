@@ -32,7 +32,7 @@ const Login = () => {
     return (
         <div className='container-fluid'>
             <div className='row d-flex justify-content-center align-items-center'>
-                <div className='col-sm-5 col-md-5 pt-4 mb-4 mb-sm-0  mt-4 mt-sm-5 pb-0 loginParent'>
+                <div className='col-md-5 pt-4 mb-4 mt-4 mt-sm-5 pb-0 loginParent'>
                     <div className='row d-flex justify-content-center align-items-center flex-column'>
                         <div className='col-4 mb-4 d-flex justify-content-center align-items-center logo'>
                             <img className='logo' src={Asset} alt="logo" />
