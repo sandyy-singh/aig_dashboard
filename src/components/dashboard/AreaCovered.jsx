@@ -6,7 +6,7 @@ const AreaCovered = () => {
       <div className="row ">
         <div className="col">
           <div className="d-flex flex-column p-4">
-            <p className="lh-1 p-3">
+            <p className="">
               <span className="fw-bold">Area Covered (in ha.) </span>
               <br />
               <span className="fw-bold fs-6"> Sep. 2023 - Nov. 2023</span>

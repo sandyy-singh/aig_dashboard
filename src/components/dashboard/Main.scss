@@ -61,10 +61,11 @@
     margin-top: 15px;
 }
 .chats{
-    min-height: 200px;
+    min-height: 230px;
     border-radius: 16px;
     background: var(--White, #FFF);
     margin-top: 15px; 
+    margin-bottom: 20px;
 }
 .new-deals{
     min-height: 240px;
@@ -93,3 +94,6 @@
     height: 20px;
     background-color: rgba(0 ,128,0 ,1);
 }
+.grad1 {
+    background-image: linear-gradient(to right, rgba(113,204,255,1), rgb(246, 242, 242));
+  }
