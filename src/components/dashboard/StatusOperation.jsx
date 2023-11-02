@@ -4,19 +4,19 @@ const StatusOperation = () => {
     return (
         <div className="container-fluid ">
             <div className="row">
-                <div className='col'>
-                    <h3 className="col mt-4 mx-2">Projected Growth</h3>
+                <div className='col mt-5 mx-3'>
+                    <span className="fs-4 fw-bold">States Under Operation</span>
                 </div>
                 <div className='col mt-5 d-flex align-items-center justify-content-center'>
-                        <div className='table-responsive'>
-                            <table className='table-bordered text-center '>
-                            <thead>
+                    <div className='table-responsive'>
+                        <table className='table table-bordered text-center 'style={{fontSize:'14px'}}>
+                            <thead className='text-center'>
                                 <tr>
                                     <th >State</th>
                                     <th >Total Land Under Management</th>
-                                    <th  style={{ backgroundColor: 'rgba(0, 128, 0, 1)', color: 'white' }} scope="col">Farming</th>
-                                    <th  style={{ backgroundColor: 'rgba(115, 74, 0, 1)', color: 'white' }} scope="col">Agroforestry</th>
-                                    <th  style={{ backgroundColor: 'rgba(0, 40, 63, 1)', color: 'white' }} scope="col">Forestry</th>
+                                    <th style={{ backgroundColor: 'rgba(0, 128, 0, 1)', color: 'white'}} scope="col">Farming</th>
+                                    <th style={{ backgroundColor: 'rgba(115, 74, 0, 1)', color: 'white' }} scope="col">Agroforestry</th>
+                                    <th style={{ backgroundColor: 'rgba(0, 40, 63, 1)', color: 'white' }} scope="col">Forestry</th>
                                 </tr>
                             </thead>
                             <tbody >
@@ -28,7 +28,7 @@ const StatusOperation = () => {
                                     <td ></td>
                                 </tr>
                                 <tr>
-                                    <td className='w-25'>Uttar Pradesh</td>
+                                    <td>Uttar Pradesh</td>
                                     <td>10000ha.</td>
                                     <td>10000ha.</td>
                                     <td></td>
@@ -50,7 +50,7 @@ const StatusOperation = () => {
                                 </tr>
                             </tbody>
                         </table>
-                        </div>
+                    </div>
                 </div>
             </div>
 

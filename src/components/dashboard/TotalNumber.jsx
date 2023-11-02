@@ -12,7 +12,7 @@ const TotalNumber = () => {
               <span className="fw-bold fs-6"> Sep. 2023 - Nov. 2023</span>
             </p>
             <div className="Number-container p-2">
-              <h1 className="px-3 mt-3">10,000</h1>
+              <h1 className="px-3 mt-3 fw-bold">10,000</h1>
             </div>
           </div>
         </div>

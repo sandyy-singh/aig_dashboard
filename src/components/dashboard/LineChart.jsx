@@ -48,7 +48,7 @@ const LineChart = () => {
   return (
     <div className="container-fluid ">
       <div className="row">
-      <h3 className="col mt-4 mx-2">Projected Growth</h3>
+      <span className="col mt-4 mx-3 fw-bold fs-4">Projected Growth</span>
       </div>
       <div className="row d-flex align-items-center justify-content-center p-md-5 ">
 
