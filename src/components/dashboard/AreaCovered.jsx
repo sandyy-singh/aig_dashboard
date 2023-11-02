@@ -3,6 +3,7 @@ import React from "react";
 const AreaCovered = () => {
   return (
     <div className="container-fluid">
+
       <div className="row ">
         <div className="col">
           <div className="d-flex flex-column p-4">
@@ -64,7 +65,9 @@ const AreaCovered = () => {
           </div>
         </div>
       </div>
+
     </div>
+
   );
 };
 

@@ -29,7 +29,7 @@ function Sidebar() {
             <li className="nav-item">
               <p className="d-flex align-items-center">
                 <img src={dashboard} alt="Dashboard Icon" />
-                <Link className="m-1 text-black text-decoration-none" to="/dashboard">
+                <Link className="m-1 text-black text-decoration-none" to="/">
                   Dashboard
                 </Link>
               </p>
@@ -37,7 +37,7 @@ function Sidebar() {
             <li className="nav-item">
               <p className="d-flex align-items-center">
                 <img src={farmer} alt="Add Farmer Icon" />
-                <Link className="m-1 text-black text-decoration-none" to="#">
+                <Link className="m-1 text-black text-decoration-none" to="/addfarmer">
                   Add Farmer
                 </Link>
               </p>

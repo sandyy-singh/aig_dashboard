@@ -12,7 +12,7 @@ const Dashboard = () => {
         <div className="col-10 main">
           <Main />
         </div>
-        <div className=""></div>
+        
         
       </div>
     </div>
