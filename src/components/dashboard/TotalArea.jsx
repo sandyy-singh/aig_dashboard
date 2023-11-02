@@ -7,13 +7,14 @@ const TotalArea = () => {
                 <div className="col">
                     <div className="d-flex flex-column p-4 ">
                         <p className="">
-                            <span className="fw-bold"> Total Area will be Covered (in ha.)</span> <br />
+                            <span className="fw-bold"> Total Area will be Covered (in ha.)</span>
+                             <br />
                             <span className="fw-bold fs-6"> Sep. 2023 - Nov. 2023</span>
                         </p>
                         <div className="Area-container ">
                             <div className="d-flex ">
                                 <div className="first"></div>
-                                <p className="ms-4">Agroforestry: 1, 500,000 ha.</p>
+                                <p className="ms-sm-4">Agroforestry: 1, 500,000 ha.</p>
                             </div>
                             <div className="d-flex ">
                                 <div className="second"></div>

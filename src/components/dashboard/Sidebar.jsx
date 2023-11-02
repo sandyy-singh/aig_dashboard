@@ -15,9 +15,9 @@ function Sidebar() {
       <div className="row navbar d-flex flex-column justify-content-between parentsidebar">
         <div className="col">
           <ul className="navbar-nav flex-column">
-            <li className="nav-item m-2 mb-3 d-flex flex-row justify-content-center align-items-center">
+            <li className="nav-item mt-4 ms-1 mb-3 d-flex flex-row  align-items-center">
               <img className='me-2' height={15} src={Asset} alt="logo" />
-              Welcome User
+              Welcome <span className='fw-bold ms-2'>User</span>
             </li>
             <li className="nav-item mb-2">
               <input
