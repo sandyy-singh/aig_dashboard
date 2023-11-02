@@ -119,24 +119,27 @@
     background-color: rgba(0, 40,63, 1);
     border-radius: 10px;
     height: 26px;
+    display: inline;
 }
 
 .grad4 {
     background-color: rgba(0, 128,0, 1);
     border-radius: 10px;
     height: 26px;
-    
+    display: inline;
 }
-.range-container{
-    position: relative;
-}
+// .range-container{
+//     position: relative;
+// }
 
 .progressFirst {
     background-color: rgba(233, 233, 233, 1);
     border-radius: 10px;
     height: 26px;
-    position: absolute;
-    flex-wrap: wrap;
+    font-size: 7px;
+    text-align: center;
+    
+
 }
 // .progressSecond {
 //     background-color: rgba(233, 233, 233, 1);
@@ -152,28 +155,34 @@
 //     position: relative;
 //     flex-wrap: wrap;
 // }
-.gbgg1{
-    font-size: 10px;
-    z-index: 100;
-    position: relative;
-    bottom: 20px;
-    left: 110px;
+// .gbgg1{
+//     font-size: 10px;
+//     z-index: 100;
+//     position: relative;
+//     bottom: 20px;
+//     left: 110px;
  
-}
+// }
 
-.gbgg2{
-    font-size: 10px;
-    z-index: 100;
-    position: relative;
-    bottom: 20px;
-    left: 110px;
+// .gbgg2{
+//     font-size: 10px;
+//     z-index: 100;
+//     position: relative;
+//     bottom: 20px;
+//     left: 110px;
 
-}
-.gbgg3{
-    font-size: 10px;
-    z-index: 100;
-    position: relative;
-    bottom: 20px;
-    left: 110px;
+// }
+// .gbgg3{
+//     font-size: 10px;
+//     z-index: 100;
+//     position: relative;
+//     bottom: 20px;
+//     left: 110px;
 
-}
+// }
+
+// .fotnt-size{
+//   font-size: 8px;
+//   text-align: center !important;
+
+// }
