@@ -22,7 +22,7 @@ const Main = () => {
         </div>
         <div className="col-md-4 ">
           <div className="box">
-            {" "}
+            
             <AreaCovered />
           </div>
         </div>

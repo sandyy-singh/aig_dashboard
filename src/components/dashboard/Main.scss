@@ -1,13 +1,13 @@
-.conatiner-main{
+.conatiner-main {
     height: 100vh;
     overflow: hidden;
-    
+
 }
 
 .content {
     height: 100%;
     overflow-y: scroll;
-  }
+}
 
 .box {
     border-radius: 16px;
@@ -29,71 +29,151 @@
 .states {
     height: 400px;
     min-height: 410px;
-   
+
     border-radius: 16px;
     background: var(--White, #FFF);
     margin-top: 15px;
 
 }
-.Growth1{
-   
+
+.Growth1 {
+
     min-height: 200px;
     border-radius: 16px;
     background: var(--White, #FFF);
     margin-top: 15px;
 }
-.Growth2{
+
+.Growth2 {
     min-height: 180px;
     border-radius: 16px;
     background: var(--White, #FFF);
     margin-top: 15px;
 }
-.Growth3{
+
+.Growth3 {
     min-height: 180px;
     border-radius: 16px;
     background: var(--White, #FFF);
     margin-top: 15px;
 }
-.Growth4{
+
+.Growth4 {
     min-height: 180px;
     border-radius: 16px;
     background: var(--White, #FFF);
     margin-top: 15px;
 }
-.chats{
+
+.chats {
     min-height: 230px;
     border-radius: 16px;
     background: var(--White, #FFF);
-    margin-top: 15px; 
+    margin-top: 15px;
     margin-bottom: 20px;
 }
-.new-deals{
+
+.new-deals {
     min-height: 240px;
     border-radius: 16px;
     background: var(--White, #FFF);
-    margin-top: 15px; 
+    margin-top: 15px;
     margin-bottom: 15px;
 }
-.chartt{
+
+.chartt {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.first{
+
+.first {
     width: 20px;
     height: 20px;
-    background-color: rgba(115 ,74,0 ,1);
+    background-color: rgba(115, 74, 0, 1);
 }
-.second{
+
+.second {
     width: 20px;
     height: 20px;
-    background-color: rgba(0 ,40,63 ,1);
+    background-color: rgba(0, 40, 63, 1);
 }
-.third{
+
+.third {
     width: 20px;
     height: 20px;
-    background-color: rgba(0 ,128,0 ,1);
+    background-color: rgba(0, 128, 0, 1);
 }
+
 .grad1 {
-    background-image: linear-gradient(to right, rgba(113,204,255,1), rgb(246, 242, 242));
-  }
+    background-image: linear-gradient(to right, rgba(113, 204, 255, 1), rgb(246, 242, 242));
+}
+
+.grad2 {
+    background-color: rgba(155, 74,0, 1);
+    border-radius: 10px;
+    height: 26px;
+    display: inline;
+}
+.grad3 {
+    background-color: rgba(0, 40,63, 1);
+    border-radius: 10px;
+    height: 26px;
+}
+
+.grad4 {
+    background-color: rgba(0, 128,0, 1);
+    border-radius: 10px;
+    height: 26px;
+    
+}
+.range-container{
+    position: relative;
+}
+
+.progressFirst {
+    background-color: rgba(233, 233, 233, 1);
+    border-radius: 10px;
+    height: 26px;
+    position: absolute;
+    flex-wrap: wrap;
+}
+// .progressSecond {
+//     background-color: rgba(233, 233, 233, 1);
+//     border-radius: 10px;
+//     height: 26px;
+//     position: relative;
+//     flex-wrap: wrap;
+// }
+// .progressThird {
+//     background-color: rgba(233, 233, 233, 1);
+//     border-radius: 10px;
+//     height: 26px;
+//     position: relative;
+//     flex-wrap: wrap;
+// }
+.gbgg1{
+    font-size: 10px;
+    z-index: 100;
+    position: relative;
+    bottom: 20px;
+    left: 110px;
+ 
+}
+
+.gbgg2{
+    font-size: 10px;
+    z-index: 100;
+    position: relative;
+    bottom: 20px;
+    left: 110px;
+
+}
+.gbgg3{
+    font-size: 10px;
+    z-index: 100;
+    position: relative;
+    bottom: 20px;
+    left: 110px;
+
+}
