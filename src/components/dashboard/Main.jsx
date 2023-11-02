@@ -3,9 +3,13 @@ import "./Main.scss";
 import LineChart from "./LineChart";
 import AreaCovered from "./AreaCovered";
 import TotalNumber from "./TotalNumber";
-import TotalArea from "./TotalArea";
+
+import TotalArea  from "./TotalArea";
+import StatusOperation from "./StatusOperation";
+
 import CountriesOp from "./CountriesOp";
 import TopKeyword from "./TopKeyword";
+
 const Main = () => {
   return (
     <div className="conatiner-fluid main conatiner-main">
@@ -27,7 +31,9 @@ const Main = () => {
           </div>
         </div>
         <div className="col-md-6">
-          <div className="states"></div>
+          <div className="states">
+            <StatusOperation/>
+          </div> 
         </div>
         <div className="col-md-6">
           <div className="states chartt">
