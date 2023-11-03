@@ -10,13 +10,13 @@ const StatusOperation = () => {
                 <div className='col mt-5 d-flex align-items-center justify-content-center'>
                     <div className='table-responsive'>
                         <table className='table table-bordered text-center 'style={{fontSize:'14px'}}>
-                            <thead className='text-center'>
+                            <thead>
                                 <tr>
                                     <th >State</th>
                                     <th >Total Land Under Management</th>
-                                    <th style={{ backgroundColor: 'rgba(0, 128, 0, 1)', color: 'white'}} scope="col">Farming</th>
-                                    <th style={{ backgroundColor: 'rgba(115, 74, 0, 1)', color: 'white' }} scope="col">Agroforestry</th>
-                                    <th style={{ backgroundColor: 'rgba(0, 40, 63, 1)', color: 'white' }} scope="col">Forestry</th>
+                                    <th style={{ backgroundColor: 'rgba(0, 128, 0, 1)', color: 'white'}} >Farming</th>
+                                    <th style={{ backgroundColor: 'rgba(115, 74, 0, 1)', color: 'white' }}>Agroforestry</th>
+                                    <th style={{ backgroundColor: 'rgba(0, 40, 63, 1)', color: 'white' }}>Forestry</th>
                                 </tr>
                             </thead>
                             <tbody >
