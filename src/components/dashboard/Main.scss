@@ -1,3 +1,8 @@
+.fullscreen{
+    background-color: #E3E3E3;
+    min-height: 100vh;
+}
+
 .conatiner-main {
     height: 100vh;
     overflow: hidden;
@@ -98,28 +103,57 @@
     width: 20px;
     height: 20px;
     background-color: rgba(0, 40, 63, 1);
-     border-radius: 5px;
+    border-radius: 5px;
 }
 
 .third {
     width: 20px;
     height: 20px;
     background-color: rgba(0, 128, 0, 1);
-     border-radius: 5px;
+    border-radius: 5px;
 }
 
 
-.progress1{
+
+.keyword {
+    display: flex;
+    padding: 12px 16px 12px 12px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    gap: 8px;
+    background: #BEDFF2;
+    border: none;
+    // margin: 0px 8px 0px 8px;
+
+}
+
+.keywordparent {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 8px;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+
+.grad1 {
+
+    background-image: linear-gradient(to right, rgba(113, 204, 255, 1), rgb(244, 240, 240));
+}
+
+.progress1 {
     height: 25px;
-    background-color: rgba(115 ,74,0 ,1);
+    background-color: rgba(115, 74, 0, 1);
     border-radius: 20px;
     margin-left: 100px;
 }
 
 .grad1 {
-    background-image: linear-gradient(to right, rgba(113,204,255,1), rgb(246, 242, 242));
-  }
-.keyword{
+    background-image: linear-gradient(to right, rgba(113, 204, 255, 1), rgb(246, 242, 242));
+}
+
+.keyword {
     display: flex;
     padding: 12px 16px 12px 12px;
     justify-content: center;
@@ -129,9 +163,10 @@
     background: #BEDFF2;
     border: none;
     margin-bottom: 8px;
-    
+
 }
-.keywordparent{
+
+.keywordparent {
     display: flex;
     align-items: flex-start;
     align-content: flex-start;
@@ -142,25 +177,53 @@
 
 .grad1 {
     background-image: linear-gradient(to right, rgba(113, 204, 255, 1), rgb(246, 242, 242));
+
 }
 
 .grad2 {
-    background-color: rgba(155, 74,0, 1);
+    background-color: rgba(155, 74, 0, 1);
     border-radius: 10px;
     height: 26px;
     display: inline;
 }
+
 .grad3 {
-    background-color: rgba(0, 40,63, 1);
+    background-color: rgba(0, 40, 63, 1);
     border-radius: 10px;
     height: 26px;
+
+    display: inline;
+
+
 }
 
 .grad4 {
-    background-color: rgba(0, 128,0, 1);
+    background-color: rgba(0, 128, 0, 1);
     border-radius: 10px;
     height: 26px;
-    
+
+    display: inline;
 }
 
 
+
+.progressFirst {
+    background-color: rgba(233, 233, 233, 1);
+    border-radius: 10px;
+    height: 26px;
+    font-size: 7px;
+    text-align: center;
+
+
+}
+
+.vertical-align-middle {
+    vertical-align: middle;
+    font-size: 12px;
+
+}
+
+.align-middle {
+    vertical-align: middle;
+    font-size: 14px;
+}
