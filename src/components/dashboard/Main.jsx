@@ -10,9 +10,11 @@ import StatusOperation from "./StatusOperation";
 import CountriesOp from "./CountriesOp";
 import TopKeyword from "./TopKeyword";
 
+
 const Main = () => {
+
   return (
-    <div className="conatiner-fluid main conatiner-main">
+    <div className="conatiner-fluid  conatiner-main">
       <div className="row content">
         <div className="col-md-4 ">
           <div className="box">
@@ -65,7 +67,7 @@ const Main = () => {
             </div>
           </div>
         </div>
-        <div className="col-md-8">
+        <div className="col-md-8 mb-md-5">
           <div className=" chats"><TopKeyword /></div>
         </div>
       </div>
