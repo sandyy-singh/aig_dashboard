@@ -5,12 +5,14 @@ import Main from "./components/dashboard/Main";
 import AddFarmer from "./components/dashboard/AddFarmer";
 import Sidebar from "./components/dashboard/Sidebar";
 
+
 function App() {
   return (
     <div className="App">
+
       <div className="container-fluid fullscreen">
         <div className="row">
-          <div className="col-2  ">
+          <div className="col-2">
             <Sidebar />
           </div>
           <div className="col-10 main">
