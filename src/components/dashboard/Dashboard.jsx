@@ -2,6 +2,7 @@ import React from "react";
 import "./Dashboard.scss"
 import Sidebar from"./Sidebar"
 import Main from"./Main"
+import { Link } from 'react-router-dom';
 
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
