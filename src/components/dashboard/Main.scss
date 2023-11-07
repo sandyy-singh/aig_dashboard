@@ -1,19 +1,27 @@
-.conatiner-main{
+.fullscreen{
+    background-color: #E3E3E3;
     height: 100vh;
     overflow: hidden;
-    
+}
+
+.conatiner-main {
+    height: 100vh;
+    overflow: hidden;
+
 }
 
 .content {
     height: 100%;
     overflow-y: scroll;
-  }
+    overflow-x: hidden;
+
+}
 
 .box {
     border-radius: 16px;
     background: var(--White, #FFF);
     min-width: 220px;
-    min-height: 200px;
+    min-height: 250px;
     margin-top: 15px;
 }
 
@@ -28,48 +36,198 @@
 
 .states {
     height: 400px;
-    min-height: 400px;
-   
+    min-height: 410px;
+
     border-radius: 16px;
     background: var(--White, #FFF);
     margin-top: 15px;
 
 }
-.Growth1{
-   
+
+.Growth1 {
+
     min-height: 200px;
     border-radius: 16px;
     background: var(--White, #FFF);
     margin-top: 15px;
 }
-.Growth2{
+
+.Growth2 {
     min-height: 180px;
     border-radius: 16px;
     background: var(--White, #FFF);
     margin-top: 15px;
 }
-.Growth3{
+
+.Growth3 {
     min-height: 180px;
     border-radius: 16px;
     background: var(--White, #FFF);
     margin-top: 15px;
 }
-.Growth4{
+
+.Growth4 {
     min-height: 180px;
     border-radius: 16px;
     background: var(--White, #FFF);
     margin-top: 15px;
 }
-.chats{
+
+.chats {
+    min-height: 230px;
+    border-radius: 16px;
+    background: var(--White, #FFF);
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.new-deals {
     min-height: 240px;
     border-radius: 16px;
     background: var(--White, #FFF);
-    margin-top: 15px; 
-}
-.new-deals{
-    min-height: 240px;
-    border-radius: 16px;
-    background: var(--White, #FFF);
-    margin-top: 15px; 
+    margin-top: 15px;
     margin-bottom: 15px;
+}
+
+.chartt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(115, 74, 0, 1);
+    border-radius: 5px;
+}
+
+.second {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(0, 40, 63, 1);
+    border-radius: 5px;
+}
+
+.third {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(0, 128, 0, 1);
+    border-radius: 5px;
+}
+
+
+
+.keyword {
+    display: flex;
+    padding: 12px 16px 12px 12px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    gap: 8px;
+    background: #BEDFF2;
+    border: none;
+    // margin: 0px 8px 0px 8px;
+
+}
+
+.keywordparent {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 8px;
+    align-self: stretch;
+    flex-wrap: wrap;
+    
+}
+
+.grad1 {
+
+    background-image: linear-gradient(to right, rgba(113, 204, 255, 1), rgb(244, 240, 240));
+}
+
+.progress1 {
+    height: 25px;
+    background-color: rgba(115, 74, 0, 1);
+    border-radius: 20px;
+    margin-left: 100px;
+}
+
+.grad1 {
+    background-image: linear-gradient(to right, rgba(113, 204, 255, 1), rgb(246, 242, 242));
+}
+
+.keyword {
+    display: flex;
+    padding: 12px 16px 12px 12px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    gap: 8px;
+    background: #BEDFF2;
+    border: none;
+    margin-bottom: 8px;
+
+}
+
+.keywordparent {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 8px;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+
+.grad1 {
+    background-image: linear-gradient(to right, rgba(113, 204, 255, 1), rgb(246, 242, 242));
+
+}
+
+.grad2 {
+    background-color: rgba(155, 74, 0, 1);
+    border-radius: 10px;
+    height: 26px;
+    display: inline;
+}
+
+.grad3 {
+    background-color: rgba(0, 40, 63, 1);
+    border-radius: 10px;
+    height: 26px;
+
+    display: inline;
+
+
+}
+
+.grad4 {
+    background-color: rgba(0, 128, 0, 1);
+    border-radius: 10px;
+    height: 26px;
+
+    display: inline;
+}
+
+
+
+.progressFirst {
+    background-color: rgba(233, 233, 233, 1);
+    border-radius: 10px;
+    height: 26px;
+    font-size: 7px;
+    text-align: center;
+
+
+}
+
+.vertical-align-middle {
+    vertical-align: middle;
+    font-size: 12px;
+
+}
+
+.align-middle {
+    vertical-align: middle;
+    font-size: 14px;
 }
