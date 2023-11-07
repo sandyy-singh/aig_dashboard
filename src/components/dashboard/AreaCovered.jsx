@@ -11,7 +11,7 @@ const AreaCovered = () => {
               <br />
               <span className="fw-bold fs-6"> Sep. 2023 - Nov. 2023</span>
             </p>
-            <div className="range-container ">
+            <div className="range-container">
               <div className="row">
                 <div className="d-flex">
                   <div className="col-4">

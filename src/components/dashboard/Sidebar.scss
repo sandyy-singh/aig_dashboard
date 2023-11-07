@@ -9,3 +9,15 @@
     height: 95vh;
    
 }
+// .listitem:hover{
+//     font-size: 20px;
+// }
+.listitem:hover {
+    img {
+      transform: scale(1.2); 
+    }
+  
+    span {
+      font-size: 18px;
+    }
+  }

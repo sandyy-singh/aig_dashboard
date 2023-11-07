@@ -41,12 +41,10 @@ const Dashboard = () => {
         </div>
         <div className={` ${isMobile ? 'col-12' : 'col-10'}`}>
           <Routes>
-
             <Route path="/" element={<Main />} />
             <Route path="/login" element={<Login />} />
             <Route path="/addfarmer" element={<AddFarmer />} />
             <Route path="/FarmerIdMain" element={<FarmerIdMain />} />
-
           </Routes>
         </div>
       </div>

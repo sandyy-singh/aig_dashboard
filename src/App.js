@@ -9,6 +9,7 @@ import React, { useState, useEffect } from 'react';
 import MobileUpperNav from "./components/dashboard/MobileUpperNav"
 
 function App() {
+
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
