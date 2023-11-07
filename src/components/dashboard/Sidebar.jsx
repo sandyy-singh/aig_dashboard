@@ -50,7 +50,7 @@ function Sidebar() {
                 </Link>
               </p>
             </li>
-          </ul>
+          </ul> 
         </div>
         <div className="col d-flex flex-column">
           <div className='row mt-auto'>

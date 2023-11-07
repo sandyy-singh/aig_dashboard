@@ -67,7 +67,7 @@ const Main = () => {
             </div>
           </div>
         </div>
-        <div className="col-md-8 mb-md-5">
+        <div className="col-md-8 ">
           <div className=" chats"><TopKeyword /></div>
         </div>
       </div>
