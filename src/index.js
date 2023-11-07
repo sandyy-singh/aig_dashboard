@@ -4,7 +4,6 @@ import './index.css';
 import App from './App';
 
 import 'react-toastify/dist/ReactToastify.css';
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'jquery/dist/jquery';
 import 'popper.js/dist/umd/popper';

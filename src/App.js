@@ -8,6 +8,7 @@ import FarmerIdMain from "./components/addFarmer/FarmerIdMain";
 import React, { useState, useEffect } from 'react';
 import MobileUpperNav from "./components/dashboard/MobileUpperNav"
 
+
 function App() {
 
   const [isMobile, setIsMobile] = useState(false);
@@ -31,7 +32,7 @@ function App() {
     <div className="">
       <div className="container-fluid fullscreen">
         <div className="row">
-         {isMobile&& (<div > <MobileUpperNav /></div>)}
+          {isMobile && (<div > <MobileUpperNav /></div>)}
           <div className={` col-2 ${isMobile ? 'mobile' : ''}`}  >
             <Sidebar />
           </div>
