@@ -7,6 +7,14 @@
     overflow-y: auto;
 
 }
+
+@media (max-width: 767px) {
+
+    .parent{
+        height: 120vh;
+        overflow: scroll;
+    }
+      }
 .inputfarmerid{
     height: 65px;
     width: 90%;
