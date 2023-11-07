@@ -8,7 +8,6 @@ import FarmerIdMain from "./components/addFarmer/FarmerIdMain";
 import React, { useState, useEffect } from 'react';
 import MobileUpperNav from "./components/dashboard/MobileUpperNav"
 
-
 function App() {
 
   const [isMobile, setIsMobile] = useState(false);
@@ -18,12 +17,13 @@ function App() {
       setIsMobile(window.innerWidth <= 767); // Adjust the width based on your mobile breakpoint
     };
 
-    // Initial check and add event listener for window resize
+    // Initial check and add  event listener for window resize
     handleResize();
     window.addEventListener('resize', handleResize);
 
     return () => {
       // Remove the event listener when the component unmounts
+         // Remove the event listener when the component unmounts
       window.removeEventListener('resize', handleResize);
     };
   }, []);
@@ -32,11 +32,11 @@ function App() {
     <div className="">
       <div className="container-fluid fullscreen">
         <div className="row">
-          {isMobile && (<div > <MobileUpperNav /></div>)}
+         {isMobile&& (<div > <MobileUpperNav /></div>)}
           <div className={` col-2 ${isMobile ? 'mobile' : ''}`}  >
             <Sidebar />
           </div>
-          <div className={` ${isMobile ? 'col-12' : 'col-10'}`}>
+          <div className={` ${isMobile ? 'col-12 ' : 'col-10'}`}>
             <Routes>
 
               <Route path="/" element={<Main />} />
