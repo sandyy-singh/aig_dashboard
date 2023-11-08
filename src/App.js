@@ -1,53 +1,53 @@
 import "./App.css";
-import { Routes, Route } from "react-router-dom";
-import Login from "./components/pages/Login";
-import Main from "./components/dashboard/Main";
-import AddFarmer from "./components/dashboard/AddFarmer";
-import Sidebar from "./components/dashboard/Sidebar";
-import FarmerIdMain from "./components/addFarmer/FarmerIdMain";
+// import { Routes, Route } from "react-router-dom";
+// import Login from "./components/pages/Login";
+// import Main from "./components/dashboard/Main";
+// import AddFarmer from "./components/dashboard/AddFarmer";
+// import Sidebar from "./components/dashboard/Sidebar";
+// import FarmerIdMain from "./components/addFarmer/FarmerIdMain";
 import React, { useState, useEffect } from "react";
-import MobileUpperNav from "./components/dashboard/MobileUpperNav";
+// import MobileUpperNav from "./components/dashboard/MobileUpperNav";
+import AfterLogin from "./AfterLogin";
+import BeforeLogin from "./BeforeLogin";
+
 
 function App() {
-  const [isMobile, setIsMobile] = useState(false);
+  const [isTocken,setIsTocken]=  useState(false);
+  // const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 767); // Adjust the width based on your mobile breakpoint
-    };
+    
+   const checkLogin =()=>{
+    setIsTocken(true)
+   }
 
-    // Initial check and add event listener for window resize
-    handleResize();
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      // Remove the event listener when the component unmounts
-      window.removeEventListener("resize", handleResize);
-    };
+   checkLogin();
+ 
   }, []);
 
   return (
-    <div className="container-fluid">
-      <div className="row">
-        {isMobile && (
-          <div>
-            <MobileUpperNav />
+      <div className="">
+  {/* <div className="container-fluid fullscreen">
+        <div className="row">
+         {isMobile&& (<div > <MobileUpperNav /></div>)}
+          <div className={` col-2 ${isMobile ? 'mobile' : ''}`}  >
+            <Sidebar />
           </div>
-        )}
-        <div className={` col-2 ${isMobile ? "mobile" : ""}`}>
-          <Sidebar />
-        </div>
-        <div className="col-10 main">
-          <div className={` ${isMobile ? "col-12" : "col-10"}`}>
+          <div className={` ${isMobile ? 'col-12 ' : 'col-10'}`}>
             <Routes>
+
               <Route path="/" element={<Main />} />
               <Route path="/login" element={<Login />} />
               <Route path="/addfarmer" element={<AddFarmer />} />
               <Route path="/FarmerIdMain" element={<FarmerIdMain />} />
+              <Route path="*" element={(<h1 className="text-center">Page not found</h1>)} />
+
             </Routes>
           </div>
         </div>
-      </div>
+      </div> */} 
+      {isTocken ?<AfterLogin/>:<BeforeLogin /> }
+
     </div>
   );
 }
