@@ -9,21 +9,30 @@ import React, { useState, useEffect } from "react";
 // import MobileUpperNav from "./components/dashboard/MobileUpperNav";
 import AfterLogin from "./AfterLogin";
 import BeforeLogin from "./BeforeLogin";
+import { useNavigate } from 'react-router-dom';
 
 
 function App() {
+  const navigate = useNavigate()
   const [isTocken,setIsTocken]=  useState(false);
   // const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     
    const checkLogin =()=>{
-    setIsTocken(true)
+    
    }
 
    checkLogin();
  
+ 
   }, []);
+  
+  const logInHandler =()=>{
+    setIsTocken(true)
+    navigate('/')
+  }
+
 
   return (
       <div className="">
@@ -46,7 +55,7 @@ function App() {
           </div>
         </div>
       </div> */} 
-      {isTocken ?<AfterLogin/>:<BeforeLogin /> }
+      {isTocken ?<AfterLogin/>:<BeforeLogin logInHandler ={logInHandler} isTocken={isTocken} setIsTocken={setIsTocken} /> }
 
     </div>
   );

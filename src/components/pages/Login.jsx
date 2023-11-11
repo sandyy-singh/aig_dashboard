@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import Asset from "../../img/Asset.png";
 
-const Login = () => {
+const Login = ({logInHandler, isTocken,setIsTocken}) => {
 
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
@@ -43,7 +43,7 @@ const Login = () => {
                                 <input className='form-control input' type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder='Password' />
                                 <p className='text-end mb-3'>Forgot Password</p>
                                 <div className='col-10 d-flex justify-content-center align-items-center'>
-                                    <button className='w-100 loginbtn' onClick={handleLogin}>
+                                    <button className='w-100 loginbtn' onClick={logInHandler}>
                                         {loading ? "Loading..." : "Login"}
                                     </button>
                                 </div>
