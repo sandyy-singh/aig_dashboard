@@ -1,8 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Asset from '../../img/Asset.png';
-
+import { useLocation } from 'react-router-dom';
 const MobileUpperNav = () => {
+  const location = useLocation();
+  if (location.pathname === '/login' || location.pathname === '/addfarmer' || location.pathname === '/FarmerIdMain' || location.pathname === '/') {
   return (
     <div className="container-fluid">
       <div className="row">
@@ -59,6 +61,9 @@ const MobileUpperNav = () => {
       </div>
     </div>
   );
+} else {
+  return null;
+}
 };
 
 export default MobileUpperNav;

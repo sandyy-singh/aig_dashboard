@@ -8,10 +8,14 @@ import { Link } from 'react-router-dom';
 import setting from '../../img/setting.png';
 import logout from '../../img/logout.png';
 import Asset from '../../img/Asset.png';
+import { useLocation } from 'react-router-dom';
 
 function Sidebar() {
-  return (
-    <nav className="container-fluid sidebar">
+  const location = useLocation();
+  if (location.pathname === '/login' || location.pathname === '/addfarmer' || location.pathname === '/FarmerIdMain' || location.pathname === '/') {
+    return (
+    
+      <nav className="container-fluid sidebar">
       <div className="row navbar d-flex flex-column justify-content-between parentsidebar">
         <div className="col">
           <ul className="navbar-nav flex-column">
@@ -79,9 +83,11 @@ function Sidebar() {
         </div>
       </div>
     </nav>
+    );
+  } else {
+    return null;
+  }
 
-
-  );
 }
 
 export default Sidebar;
