@@ -31,6 +31,26 @@ import MobileUpperNav from "./MobileUpperNav"
   //   };
   // }, []);
 
+    //   <div className="">
+    //   <div className="container-fluid fullscreen">
+    //     <div className="row">
+    //      {isMobile&& (<div > <MobileUpperNav /></div>)}
+    //       <div className={` col-2 ${isMobile ? 'mobile' : ''}`}  >
+    //         <Sidebar />
+    //       </div>
+    //       <div className={` ${isMobile ? 'col-12 ' : 'col-10'}`}>
+    //         <Routes>
+
+    //           <Route path="/" element={<Main />} />
+    //           <Route path="/login" element={<Login />} />
+    //           <Route path="/addfarmer" element={<AddFarmer />} />
+    //           <Route path="/FarmerIdMain" element={<FarmerIdMain />} />
+
+    //         </Routes>
+    //       </div>
+    //     </div>
+    //   </div>
+    // </div>
 //   return (
 //     <div className="">
 //     <div className="container-fluid fullscreen">
@@ -44,7 +64,7 @@ import MobileUpperNav from "./MobileUpperNav"
 
 //             <Route path="/" element={<Main />} />
 //             <Route path="/login" element={<Login />} />
-//             <Route path="/addfarmer" element={<AddFarmer />} />
+//             <Route path="/login" element={<AddFarmer />} />
 //             <Route path="/FarmerIdMain" element={<FarmerIdMain />} />
 
 //           </Routes>
