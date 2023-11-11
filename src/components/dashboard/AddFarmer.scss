@@ -1,5 +1,5 @@
 .parent{
-    min-height: 95vh;
+    height: 95vh;
     margin:15px 2px 10px  1px ;
     border-radius: 16px;
     background: var(--White, #ffffff);
@@ -7,6 +7,16 @@
     overflow-y: auto;
 
 }
+
+
+
+@media (max-width: 767px) {
+
+    .parent{
+        height: 82vh;
+        overflow: scroll;
+    }
+      }
 .inputfarmerid{
     height: 65px;
     width: 90%;

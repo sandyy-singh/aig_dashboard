@@ -8,16 +8,20 @@ import { Link } from 'react-router-dom';
 import setting from '../../img/setting.png';
 import logout from '../../img/logout.png';
 import Asset from '../../img/Asset.png';
+import { useLocation } from 'react-router-dom';
 
 function Sidebar() {
-  return (
-    <nav className="container-fluid sidebar">
+  const location = useLocation();
+  if (location.pathname === '/login' || location.pathname === '/addfarmer' || location.pathname === '/FarmerIdMain' || location.pathname === '/') {
+    return (
+    
+      <nav className="container-fluid sidebar">
       <div className="row navbar d-flex flex-column justify-content-between parentsidebar">
         <div className="col">
           <ul className="navbar-nav flex-column">
             <li className="nav-item mt-4 ms-1 mb-3 d-flex flex-row  align-items-center">
               <img className='me-2' height={15} src={Asset} alt="logo" />
-              Welcome <span className='fw-bold ms-2'>User</span>
+              Welcome<span className='fw-bold ms-2'>User</span>
             </li>
             <li className="nav-item mb-2">
               <input
@@ -50,7 +54,7 @@ function Sidebar() {
                 </Link>
               </p>
             </li>
-          </ul>
+          </ul> 
         </div>
         <div className="col d-flex flex-column">
           <div className='row mt-auto'>
@@ -79,7 +83,11 @@ function Sidebar() {
         </div>
       </div>
     </nav>
-  );
+    );
+  } else {
+    return null;
+  }
+
 }
 
 export default Sidebar;

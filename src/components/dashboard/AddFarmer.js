@@ -312,7 +312,7 @@ const AddFarmer = () => {
     setShowInput(false);
   };
   return (
-    <div className="container-fluid parent ">
+    <div className="container-fluid parent">
      
       {showInput && (
         <div className="row h-100 d-flex justify-content-center align-items-center flex-column">

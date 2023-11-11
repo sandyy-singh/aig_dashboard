@@ -7,8 +7,14 @@
 .conatiner-main {
     height: 100vh;
     overflow: hidden;
-
 }
+
+@media (max-width: 767px) {
+
+    .conatiner-main {
+        height: 90vh;
+    }
+      }
 
 .content {
     height: 100%;
