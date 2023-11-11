@@ -2,6 +2,7 @@
 // import "./Dashboard.scss"
 // import Sidebar from"./Sidebar"
 // import Main from"./Main"
+ import Main from"./Main2"
 
 // import "./App.css";
 import { Routes, Route } from "react-router-dom";
