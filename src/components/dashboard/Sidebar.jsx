@@ -8,6 +8,9 @@ import { Link } from "react-router-dom";
 import setting from "../../img/setting.png";
 import logout from "../../img/logout.png";
 import Asset from "../../img/Asset.png";
+import {MdOutlinePeopleAlt} from 'react-icons/md';
+import {HiOutlineClipboardList} from 'react-icons/hi';
+import {RxDashboard} from 'react-icons/rx';
 
 function Sidebar() {
   const [activeListItem, setActiveListItem] = useState(null);
@@ -38,19 +41,22 @@ function Sidebar() {
             </li>
             <li className="nav-item mt-2 listitem" onClick={() => handleListItemClick("Dashboard")}>
               <Link className="m-1 text-black text-decoration-none listitem" to="/">
-                <img className="mb-1 me-1" src={dashboard} alt="Dashboard Icon" />
-                <span style={{ color: isListItemActive("Dashboard") }}>Dashboard</span>
+                {/* <img className="mb-1 me-1" src={dashboard} alt="Dashboard Icon" /> */}
+                <RxDashboard className="mb-1 me-1" style={{ color: isListItemActive("Dashboard") }}/>
+                <span  style={{ color: isListItemActive("Dashboard") }}>Dashboard</span>
               </Link>
             </li>
             <li className="nav-item mt-2 listitem" onClick={() => handleListItemClick("Add Farmer")}>
               <Link className="m-1 text-black text-decoration-none" to="/addfarmer">
-                <img className="mb-1 me-1" src={farmer} alt="Add Farmer Icon" />
+                {/* <img className="mb-1 me-1" src={farmer} alt="Add Farmer Icon" /> */}
+                <MdOutlinePeopleAlt style={{ color: isListItemActive("Add Farmer") }} className="mb-1 me-1"/>
                 <span style={{ color: isListItemActive("Add Farmer") }}>Add Farmer</span>
               </Link>
             </li>
             <li className="nav-item mt-2 listitem" onClick={() => handleListItemClick("Generate Report")}>
               <Link className="text-black text-decoration-none" to="#">
-                <img className="mb-1 me-1" src={generate_report} alt="Generate Report Icon" />
+                {/* <img className="mb-1 me-1" src={generate_report} alt="Generate Report Icon" /> */}
+                <HiOutlineClipboardList className="mb-1 me-1" style={{ color: isListItemActive("Generate Report") }}/>
                 <span style={{ color: isListItemActive("Generate Report") }}>Generate Report</span>
               </Link>
             </li>

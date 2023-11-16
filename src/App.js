@@ -1,17 +1,17 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import Login from "./components/pages/Login";
+// import { app } from "./Firebase/FirebaseConn";
+// import { getFirestore, doc, getDoc } from "firebase/firestore";
+import Login from "./pages/Login";
 import Main from "./components/dashboard/Main";
 import AddFarmer from "./components/dashboard/AddFarmer";
 import Sidebar from "./components/dashboard/Sidebar";
 import FarmerIdMain from "./components/addFarmer/FarmerIdMain";
-import React, { useState, useEffect } from 'react';
-import MobileUpperNav from "./components/dashboard/MobileUpperNav"
-
+import React, { useState, useEffect } from "react";
+import MobileUpperNav from "./components/dashboard/MobileUpperNav";
+// const Firestore = getFirestore(app);
 function App() {
-
   const [isMobile, setIsMobile] = useState(false);
-
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 767); // Adjust the width based on your mobile breakpoint
@@ -19,11 +19,11 @@ function App() {
 
     // Initial check and add event listener for window resize
     handleResize();
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
 
     return () => {
       // Remove the event listener when the component unmounts
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
@@ -31,18 +31,20 @@ function App() {
     <div className="">
       <div className="container-fluid fullscreen">
         <div className="row">
-         {isMobile&& (<div > <MobileUpperNav /></div>)}
-          <div className={` col-2 ${isMobile ? 'mobile' : ''}`}  >
+          {isMobile && (
+            <div>
+              <MobileUpperNav />
+            </div>
+          )}
+          <div className={` col-2 ${isMobile ? "mobile" : ""}`}>
             <Sidebar />
           </div>
-          <div className={` ${isMobile ? 'col-12' : 'col-10'}`}>
+          <div className={` ${isMobile ? "col-12" : "col-10"}`}>
             <Routes>
-
               <Route path="/" element={<Main />} />
               <Route path="/login" element={<Login />} />
               <Route path="/addfarmer" element={<AddFarmer />} />
               <Route path="/FarmerIdMain" element={<FarmerIdMain />} />
-
             </Routes>
           </div>
         </div>
