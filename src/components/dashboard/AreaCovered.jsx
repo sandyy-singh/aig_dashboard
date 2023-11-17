@@ -14,7 +14,7 @@ const AreaCovered = () => {
             <div className="range-container">
               <div className="row">
                 <div className="d-flex">
-                  <div className="col-4">
+                  <div className="col-4 me-2">
                     <p>Agroforestry</p>
                   </div>
                   <div className="col-8  progressFirst ms-2">
@@ -28,8 +28,8 @@ const AreaCovered = () => {
                   </div>
                 </div>
 
-                <div className="d-flex">
-                  <div className="col-4">
+                <div className="d-flex ">
+                  <div className="col-4 me-2">
                     <p>Forestry</p>
                   </div>
                   <div className="col-8  progressFirst ms-2 ">
@@ -46,7 +46,7 @@ const AreaCovered = () => {
                 </div>
 
                 <div className="d-flex">
-                  <div className="col-4">
+                  <div className="col-4 me-2">
                     <p>Farming</p>
                   </div>
                   <div className="col-8  progressFirst ms-2 ">

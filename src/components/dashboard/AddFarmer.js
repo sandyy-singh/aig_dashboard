@@ -3,12 +3,12 @@ import React, { useEffect, useState } from "react";
 // import { useNavigate } from "react-router-dom";
 
 // import Navbar from "./Navbar";\
-import { app } from "../../Firebase/FirebaseConn";
+// import { app } from "../../Firebase/FirebaseConn";
 import { useNavigate } from "react-router-dom";
-import { getFirestore, getDocs, collection } from "firebase/firestore";
+// import { getFirestore, getDocs, collection } from "firebase/firestore";
 // console.log("firestore", Firestore);
 const AddFarmer = () => {
-  const Firestore = getFirestore(app);
+  // const Firestore = getFirestore(app);
   const [allDocs, setAllDocs] = useState([]);
   const navigate = useNavigate();
   const [cropsAlso, setCropsAlso] = useState(false);
@@ -306,26 +306,26 @@ const AddFarmer = () => {
   //     navigate("/");
   //     window.location.reload();
   // };
-  useEffect(() => {
-    const getUserdata = async () => {
-      const docRef = collection(
-        Firestore,
-        "AgroforestryFormData"
-        // "TOFOOg9jMOYNZ0kXjoUFM6e5HrC2/Agroforestry_reg"
-      );
-      const snapshot = await getDocs(docRef);
-      const docs = snapshot.docs.map((doc) => {
-        // console.log("id", doc.id);
-        const data = doc.data();
-        data.id = doc.id;
-        return data;
-      });
-      // console.log(docs);
-      console.log(docs);
-    };
-    getUserdata();
-    console.log(allDocs);
-  }, []);
+  // useEffect(() => {
+  //   const getUserdata = async () => {
+  //     const docRef = collection(
+  //       Firestore,
+  //       "AgroforestryFormData"
+  //       // "TOFOOg9jMOYNZ0kXjoUFM6e5HrC2/Agroforestry_reg"
+  //     );
+  //     const snapshot = await getDocs(docRef);
+  //     const docs = snapshot.docs.map((doc) => {
+  //       // console.log("id", doc.id);
+  //       const data = doc.data();
+  //       data.id = doc.id;
+  //       return data;
+  //     });
+  //     // console.log(docs);
+  //     console.log(docs);
+  //   };
+  //   getUserdata();
+  //   console.log(allDocs);
+  // }, []);
   const [showForm, setShowForm] = useState(false);
   const [showInput, setShowInput] = useState(true);
   const goToForm = () => {
@@ -333,7 +333,7 @@ const AddFarmer = () => {
     setShowInput(false);
   };
   return (
-    <div className="container-fluid parent ">
+    <div className="container-fluid parent">
       {showInput && (
         <div className="row h-100 d-flex justify-content-center align-items-center flex-column">
           <div className="col-sm-6 d-flex justify-content-center align-items-center inputfarmer">
