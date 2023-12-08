@@ -46,14 +46,14 @@ const LineChart = () => {
 
   return (
     <div className="container-fluid ">
-      <div className="row">
-        <div className="col-12 mt-lg-5 ">
+      <div className="row p-0 p-xxl-5">
+        <div className="col-12 mt-lg-5 p-0 p-xl-5">
           <div className="row">
-            <div className="col-12 mt-5 mx-3">
+            <div className="col-12 ">
               <h3 className="fs-4 fw-bold">Projected Growth</h3>
             </div>
 
-            <div className="col-12 d-flex align-items-center justify-content-center p-md-5 mb-lg-4">
+            <div className="col-12 d-flex align-items-center justify-content-center ">
               <Line data={data} />
             </div>
           </div>

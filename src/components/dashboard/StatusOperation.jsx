@@ -3,9 +3,10 @@ import React from 'react'
 const StatusOperation = () => {
     return (
         <div className="container-fluid ">
-            <div className="row">
-                <div className='col-12 mt-5 mx-3'>
-                    <h3 className="fs-4 fw-bold">States Under Operation</h3>
+            <div className="row"> 
+
+                <div className='col-12 mt-5 mx-3 mx-xl-0'>
+                    <h3 className="fs-4 fw-bold  ms-5 mt">States Under Operation</h3>
                 </div>
                 <div className='col-12 mt-5 d-flex align-items-center justify-content-center'>
                     <div className='table-responsive'>
@@ -34,19 +35,13 @@ const StatusOperation = () => {
                                     <td className='vertical-align-middle'></td>
                                     <td className='vertical-align-middle'></td>
                                 </tr>
+                       
                                 <tr>
                                     <td className='vertical-align-middle'  >Tamil Nadu</td>
                                     <td className='vertical-align-middle'  >15000ha.</td>
                                     <td className='vertical-align-middle'  ></td>
                                     <td className='vertical-align-middle'  >15000ha.</td>
-                                    <td className='vertical-align-middle'  ></td>
-                                </tr>
-                                <tr>
-                                    <td className='vertical-align-middle'  >Tamil Nadu</td>
-                                    <td className='vertical-align-middle'  >15000ha.</td>
-                                    <td className='vertical-align-middle'  ></td>
-                                    <td className='vertical-align-middle'  >15000ha.</td>
-                                    <td className='vertical-align-middle'  ></td>
+                                    <td className='vertical-align-middle'  >1500ha</td>
                                 </tr>
                             </tbody>
                         </table>
