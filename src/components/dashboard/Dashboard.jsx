@@ -101,7 +101,7 @@ const Dashboard = () => {
         <div className="row">
           {isMobile && (
             <div>
-              <MobileUpperNav />
+              <MobileUpperNav /> 
             </div>
           )}
           <div className={` col-2 ${isMobile ? "mobile" : ""}`}>
