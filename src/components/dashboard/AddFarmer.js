@@ -1,11 +1,15 @@
 import "./AddFarmer.scss";
-import React, {  useState } from "react";
+import React, { useEffect, useState } from "react";
 // import { useNavigate } from "react-router-dom";
 
-// import Navbar from "./Navbar";
+// import Navbar from "./Navbar";\
+// import { app } from "../../Firebase/FirebaseConn";
 import { useNavigate } from "react-router-dom";
-
+// import { getFirestore, getDocs, collection } from "firebase/firestore";
+// console.log("firestore", Firestore);
 const AddFarmer = () => {
+  // const Firestore = getFirestore(app);
+  const [allDocs, setAllDocs] = useState([]);
   const navigate = useNavigate();
   const [cropsAlso, setCropsAlso] = useState(false);
   const [improvedpractice, setImprovedpractice] = useState(false);
@@ -91,13 +95,11 @@ const AddFarmer = () => {
   //     };
   //     listdata();
   // }, []);
-  
 
   const handleNavigation = () => {
     // Navigate to a different route
-    navigate('/FarmerIdMain');
+    navigate("/FarmerIdMain");
   };
-
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -304,7 +306,26 @@ const AddFarmer = () => {
   //     navigate("/");
   //     window.location.reload();
   // };
-
+  // useEffect(() => {
+  //   const getUserdata = async () => {
+  //     const docRef = collection(
+  //       Firestore,
+  //       "AgroforestryFormData"
+  //       // "TOFOOg9jMOYNZ0kXjoUFM6e5HrC2/Agroforestry_reg"
+  //     );
+  //     const snapshot = await getDocs(docRef);
+  //     const docs = snapshot.docs.map((doc) => {
+  //       // console.log("id", doc.id);
+  //       const data = doc.data();
+  //       data.id = doc.id;
+  //       return data;
+  //     });
+  //     // console.log(docs);
+  //     console.log(docs);
+  //   };
+  //   getUserdata();
+  //   console.log(allDocs);
+  // }, []);
   const [showForm, setShowForm] = useState(false);
   const [showInput, setShowInput] = useState(true);
   const goToForm = () => {
@@ -313,7 +334,6 @@ const AddFarmer = () => {
   };
   return (
     <div className="container-fluid parent">
-     
       {showInput && (
         <div className="row h-100 d-flex justify-content-center align-items-center flex-column">
           <div className="col-sm-6 d-flex justify-content-center align-items-center inputfarmer">
@@ -1174,7 +1194,7 @@ const AddFarmer = () => {
                       className="btn btn-success px-sm-5 py-sm-2"
                       onClick={handleNavigation}
                     >
-                    Continue
+                      Continue
                     </button>
                   </div>
                 </div>
