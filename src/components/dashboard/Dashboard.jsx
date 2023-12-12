@@ -5,7 +5,7 @@
 
 // import "./App.css";
 import { Routes, Route } from "react-router-dom";
-// import Login from "./components/pages/Login";
+import Login from "./components/pages/Login";
 import Main from "./Main";
 import AddFarmer from "./AddFarmer";
 import Sidebar from "./Sidebar";
@@ -110,6 +110,7 @@ const Dashboard = () => {
             <Routes>
               <Route path="addfarmer" element={<AddFarmer />} />
               <Route path="FarmerIdMain" element={<FarmerIdMain />} />
+
             </Routes>
           </div>
         </div>
