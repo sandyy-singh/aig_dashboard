@@ -1,21 +1,8 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Login from "./pages/Login";
 
-const BeforeLogin = ({ logInHandler, isTocken, setIsTocken }) => {
-  // const [isTocken,setIsTocken]=  useState(false);
-  // const [isMobile, setIsMobile] = useState(false);
-
-  // useEffect(() => {
-
-  //  const checkLogin =()=>{
-  //   setIsTocken(false)
-  //  }
-
-  //  checkLogin();
-
-  // }, []);
-
+const BeforeLogin = () => {
   return (
     <div className="">
       <Routes>
@@ -23,16 +10,7 @@ const BeforeLogin = ({ logInHandler, isTocken, setIsTocken }) => {
           path="*"
           element={<h1 className="text-center">page not available</h1>}
         />
-        <Route
-          path="/"
-          element={
-            <Login
-              logInHandler={logInHandler}
-              isTocken={isTocken}
-              setIsTocken={setIsTocken}
-            />
-          }
-        />
+        <Route path="/" element={<Login />} />
       </Routes>
     </div>
   );

@@ -1,27 +1,19 @@
 import React, { useState } from "react";
-import axios from "axios";
-import { useNavigate } from "react-router-dom";
-import { ToastContainer, toast } from "react-toastify";
 import Asset from "../img/Asset.png";
-
-const Login = ({ logInHandler, isTocken, setIsTocken }) => {
+import { useUserContext } from "../ContextProvider";
+const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
-  const navigate = useNavigate();
-  const handleLogin = async () => {
+  const context = useUserContext();
+  const { user, setIsTocken } = context;
+  const logInHandler = async () => {
     try {
       setLoading(true);
-      const { data } = await axios.post(
-        "http://localhost:5000/api/user/login",
-        { email, password }
-      );
-      console.log(data);
-      if (data.status === 201) {
-        navigate("/dashboard");
-      }
-      if (data.status === 40) {
-        toast.error("Login Failed");
+      if (email === user.email && password === user.password) {
+        setIsTocken(true);
+      } else {
+        alert("details invalid");
       }
       setLoading(false);
     } catch (error) {
@@ -65,7 +57,6 @@ const Login = ({ logInHandler, isTocken, setIsTocken }) => {
           </div>
         </div>
       </div>
-      <ToastContainer />
     </div>
   );
 };
