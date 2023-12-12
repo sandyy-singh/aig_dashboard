@@ -39,9 +39,9 @@ const LineChart = () => {
                 <h3 className="fs-4 fw-bold">Projected Growth</h3>
               </div>
             </div>
-            <div className="col-12 d-flex align-items-center justify-content-center p-md-4 mb-lg-4">
+            <div className="p-md-4 mb-lg-4">
               <div className="col-12 d-flex align-items-center justify-content-center p-md-4 mb-lg-4">
-              <Line data={data} options={options} height={100n } width={300} />
+              <Line data={data} options={options} />
               </div>
             </div>
           </div>
