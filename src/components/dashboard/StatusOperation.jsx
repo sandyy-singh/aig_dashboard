@@ -41,6 +41,13 @@ const StatusOperation = () => {
                                     <td className='vertical-align-middle'  >15000ha.</td>
                                     <td className='vertical-align-middle'  ></td>
                                     <td className='vertical-align-middle'  >15000ha.</td>
+                                    <td className='vertical-align-middle'  ></td>
+                                </tr>
+                                <tr>
+                                    <td className='vertical-align-middle'  >Rajasthan</td>
+                                    <td className='vertical-align-middle'  >6500ha.</td>
+                                    <td className='vertical-align-middle'  >5000ha.</td>
+                                    <td className='vertical-align-middle'  ></td>
                                     <td className='vertical-align-middle'  >1500ha</td>
                                 </tr>
                             </tbody>

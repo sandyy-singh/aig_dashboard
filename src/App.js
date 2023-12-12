@@ -5,46 +5,43 @@ import "./App.css";
 // import AddFarmer from "./components/dashboard/AddFarmer";
 // import Sidebar from "./components/dashboard/Sidebar";
 // import FarmerIdMain from "./components/addFarmer/FarmerIdMain";
-import React, { useState, useEffect } from "react";
+import React from "react";
 // import MobileUpperNav from "./components/dashboard/MobileUpperNav";
 import AfterLogin from "./AfterLogin";
 import BeforeLogin from "./BeforeLogin";
-import { useNavigate } from 'react-router-dom';
-
+// import { useNavigate } from "react-router-dom";
+import { useUserContext } from "./ContextProvider";
 
 function App() {
-  const navigate = useNavigate()
-  const [isTocken,setIsTocken]=  useState(false);
+  // const navigate = useNavigate();
+  // const [isTocken, setIsTocken] = useState(false);
   // const [isMobile, setIsMobile] = useState(false);
+  const context = useUserContext();
+  const { isTocken } = context;
+  // useEffect(() => {
+  //   const checkLogin = () => {};
 
-  useEffect(() => {
-    
-   const checkLogin =()=>{
-    
-   }
-
-   checkLogin();
- 
- 
-  }, []);
-  
-  const logInHandler =()=>{
-    setIsTocken(true)
-    navigate('/')
-  }
-
+  //   checkLogin();
+  // }, []);
+  // const logInHandler = () => {
+  //   setIsTocken(true);
+  //   navigate("/");
+  // };
 
   return (
-      <div className="">
-  {/* <div className="container-fluid fullscreen">
+    <div className="">
+      {/* <div className="container-fluid fullscreen">
         <div className="row">
-         {isMobile&& (<div > <MobileUpperNav /></div>)}
-          <div className={` col-2 ${isMobile ? 'mobile' : ''}`}  >
+          {isMobile && (
+            <div>
+              <MobileUpperNav />
+            </div>
+          )}
+          <div className={` col-2 ${isMobile ? "mobile" : ""}`}>
             <Sidebar />
           </div>
           <div className={` ${isMobile ? 'col-12 ' : 'col-10'}`}>
             <Routes>
-
               <Route path="/" element={<Main />} />
               <Route path="/login" element={<Login />} />
               <Route path="/addfarmer" element={<AddFarmer />} />
@@ -54,10 +51,19 @@ function App() {
             </Routes>
           </div>
         </div>
-      </div> */} 
-      {isTocken ?<AfterLogin/>:<BeforeLogin logInHandler ={logInHandler} isTocken={isTocken} setIsTocken={setIsTocken} /> }
-
+      </div> */}
+      {isTocken ? (
+        <AfterLogin />
+      ) : (
+        <BeforeLogin
+        // logInHandler={logInHandler}
+        // isTocken={isTocken}
+        // setIsTocken={setIsTocken}
+        />
+      )}
     </div>
   );
 }
 export default App;
+
+
