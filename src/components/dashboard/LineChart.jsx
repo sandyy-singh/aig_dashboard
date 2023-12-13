@@ -1,28 +1,7 @@
 import React from "react";
 import { Line } from "react-chartjs-2";
 import "chart.js/auto";
-import {
-  Chart as ChartJS,
-  Title,
-  Tooltip,
-  LineElement,
-  Legend,
-  CategoryScale,
-  LinearScale,
-  PointElement,
-  Filler,
-} from "chart.js";
 
-ChartJS.register(
-  Title,
-  Tooltip,
-  LineElement,
-  Legend,
-  CategoryScale,
-  LinearScale,
-  PointElement,
-  Filler
-);
 const LineChart = () => {
   // const data = {
   //   labels: ["2023", "2024", "2025", "2026", "2027", "2028"],
@@ -48,26 +27,23 @@ const LineChart = () => {
     labels: ["2023", "2024", "2025", "2026", "2027", "2028"],
     datasets: [
       {
-        label: "Sales",
-        data: [50000, 250000, 450000, 650000],
+        label: {
+          display: false,
+        },
+        data: [1065, 1059, 2080, 3081, 4056],
         borderColor: "blue",
         fill: false,
         tension: 0.1,
       },
+
+      //   {
+      //     label: "yearly Sales",
+      //     data: [55, 85, 40, 71, 66],
+      //     borderColor: "red",
+      //     fill: false,
+      //   },
     ],
   };
-
-  const options = {
-    scales: {
-      y: {
-        beginAtZero: true,
-        ticks: {
-          stepSize: 200000, // Set the step size for the y-axis ticks
-        },
-      },
-    },
-  };
-
   return (
     <div className="container-fluid ">
       <div className="row">
@@ -78,14 +54,15 @@ const LineChart = () => {
                 <h3 className="fs-4 fw-bold">Projected Growth</h3>
               </div>
             </div>
-            <div className="col-12 d-flex align-items-center justify-content-center p-md-4 mb-lg-4">
+            <div className="p-md-4 mb-lg-4">
               <div className="col-12 d-flex align-items-center justify-content-center p-md-4 mb-lg-4">
-                <Line data={data} options={options} height={100n} width={300} />
+                <Line data={data} />
               </div>
             </div>
           </div>
         </div>
       </div>
+          
     </div>
   );
 };
