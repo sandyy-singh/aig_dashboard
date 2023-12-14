@@ -24,10 +24,12 @@
 }
 
 .box {
+ 
     border-radius: 16px;
     background: var(--White, #FFF);
     min-width: 220px;
     min-height: 250px;
+   
     margin-top: 15px;
 }
 
@@ -41,9 +43,13 @@
 
 
 .states {
-    height: 400px;
-    min-height: 410px;
-
+   
+    // min-height: 410px;
+    // max-height: 500px;
+    display: flex;
+    flex:wrap;
+    height: 50vh;
+    padding: 15px;
     border-radius: 16px;
     background: var(--White, #FFF);
     margin-top: 15px;
@@ -81,6 +87,7 @@
 
 .chats {
     min-height: 230px;
+   
     border-radius: 16px;
     background: var(--White, #FFF);
     margin-top: 15px;

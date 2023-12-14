@@ -5,10 +5,10 @@ const StatusOperation = () => {
         <div className="container-fluid ">
             <div className="row"> 
 
-                <div className='col-12 mt-5 mx-3 mx-xl-0'>
-                    <h3 className="fs-4 fw-bold  ms-5 mt">States Under Operation</h3>
+                <div className='col-12  mx-3 mx-xl-0'>
+                    <h3 className="fs-4 fw-bold  ms-3 mt">States Under Operation</h3>
                 </div>
-                <div className='col-12 mt-5 d-flex align-items-center justify-content-center'>
+                <div className='col-12 mt-xl-5 d-flex align-items-center justify-content-center'>
                     <div className='table-responsive'>
                         <table className='table table-bordered text-center '>
                             <thead>

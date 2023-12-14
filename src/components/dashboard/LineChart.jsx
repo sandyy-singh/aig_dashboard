@@ -35,7 +35,7 @@ const LineChart = () => {
         <div className="col-12 mt-lg-5 ">
           <div className="row">
             <div className="col-12 mt-5 mx-3 ">
-              <div className="mt-xl-2">
+              <div className=" mt-xl-4">
                 <h3 className="fs-4 fw-bold">Projected Growth</h3>
               </div>
             </div>
