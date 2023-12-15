@@ -8,6 +8,7 @@ export const UserProvider = ({ children }) => {
   const user = {
     email: "admin@gmail.com",
     password: "123456",
+    // name: "Admin",
   };
   const logInHandler = () => {
     setIsTocken(true);

@@ -17,6 +17,7 @@ function App() {
   // const [isTocken, setIsTocken] = useState(false);
   // const [isMobile, setIsMobile] = useState(false);
   const context = useUserContext();
+  // console.log("context", context);
   const { isTocken } = context;
   // useEffect(() => {
   //   const checkLogin = () => {};
@@ -65,5 +66,3 @@ function App() {
   );
 }
 export default App;
-
-
