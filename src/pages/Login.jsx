@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Asset from "../img/Asset.png";
 import { useUserContext } from "../ContextProvider";
+import DharaLogo from "../img/DharaLogo.jpg";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -28,7 +29,7 @@ const Login = () => {
         <div className="col-md-5 pt-4 mb-4 mt-4 mt-sm-5 pb-0 loginParent">
           <div className="row d-flex justify-content-center align-items-center flex-column">
             <div className="col-4 mb-4 d-flex justify-content-center align-items-center logo">
-              <img className="logo" src={Asset} alt="logo" />
+              <img className="logo" src={DharaLogo} alt="logo" />
             </div>
             <div className="col-8">
               <div className="row d-flex justify-content-center align-items-center flex-column">
