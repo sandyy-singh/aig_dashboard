@@ -4,15 +4,13 @@ import LineChart from "./LineChart";
 import AreaCovered from "./AreaCovered";
 import TotalNumber from "./TotalNumber";
 
-import TotalArea  from "./TotalArea";
+import TotalArea from "./TotalArea";
 import StatusOperation from "./StatusOperation";
 
 import CountriesOp from "./CountriesOp";
 import TopKeyword from "./TopKeyword";
 
-
 const Main = () => {
-
   return (
     <div className="conatiner-fluid  conatiner-main">
       <div className="row content">
@@ -28,14 +26,13 @@ const Main = () => {
         </div>
         <div className="col-md-4 ">
           <div className="box">
-            
             <AreaCovered />
           </div>
         </div>
         <div className="col-md-6">
           <div className="states">
-            <StatusOperation/>
-          </div> 
+            <StatusOperation />
+          </div>
         </div>
         <div className="col-md-6">
           <div className="states chartt">
@@ -68,7 +65,9 @@ const Main = () => {
           </div>
         </div>
         <div className="col-md-8 ">
-          <div className=" chats"><TopKeyword /></div>
+          <div className=" chats">
+            <TopKeyword />
+          </div>
         </div>
       </div>
     </div>

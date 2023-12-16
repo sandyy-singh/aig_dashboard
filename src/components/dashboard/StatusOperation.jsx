@@ -3,12 +3,12 @@ import React from "react";
 const StatusOperation = () => {
   return (
     <div className="container-fluid ">
-      <div className="row">
-        <div className="col-12 mt-5 mx-3 mx-xl-0">
-          <h3 className="fs-4 fw-bold  ms-5 mt">States Under Operation</h3>
+      <div className="row h-100">
+        <div className="col-12 h-30  mx-3 mx-xl-0">
+          <h3 className="fs-4 fw-bold  ms-3">States Under Operation</h3>
         </div>
-        <div className="col-12 mt-5 d-flex align-items-center justify-content-center">
-          <div className="table-responsive">
+        <div className="col-12 h-70 pt-4 pt-xl-0 d-flex align-items-center justify-content-center">
+          <div className="table-responsive ">
             <table className="table table-bordered text-center ">
               <thead>
                 <tr>

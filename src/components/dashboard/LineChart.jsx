@@ -28,24 +28,17 @@ const LineChart = () => {
   };
   return (
     <div className="container-fluid ">
-      <div className="row">
-        <div className="col-12 mt-lg-5 ">
-          <div className="row">
-            <div className="col-12 mt-5 mx-3 ">
-              <div className=" mt-xl-4">
-                <h3 className="fs-4 fw-bold">Projected Growth</h3>
-              </div>
-            </div>
-            <div className="p-md-4 mb-lg-4">
-              <div className="col-12 d-flex align-items-center justify-content-center p-md-4 mb-lg-4">
-                <Line data={data} options={options} />
-              </div>
-            </div>
-          </div>
+      <div className="row h-100 pt-5">
+        {/* <div className="col-12 mt-lg-5 ">
+          <div className="row"> */}
+        <div className="col-12 h-30 ">
+          {/* <div className=" mt-xl-4"> */}
+          <h3 className="fs-4 fw-bold">Projected Growth</h3>
+          {/* </div> */}
         </div>
-        <div className="col-12 mt-5 d-flex align-items-center justify-content-center">
+        <div className="col-12 h-70 p-md-4  d-flex align-items-center justify-content-center">
           {/* <div className="col-12 d-flex align-items-center justify-content-center p-md-4 mb-lg-4"> */}
-          <Line data={data} options={options} height={100} width={250} />
+          <Line data={data} options={options} />
           {/* </div> */}
         </div>
         {/* </div> */}
